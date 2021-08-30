@@ -1,5 +1,8 @@
 <template>
-  <h1>Hello, World!</h1>
+  <div>
+    <h1>Hello, World!</h1>
+    <span class="icon-arrow-down"></span>
+  </div>
 </template>
 
 <script lang="ts">
