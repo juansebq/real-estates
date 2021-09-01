@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "Cundinamarca",
+    "path": "/"
+  },
+  {
+    "id": 2,
+    "name": "Antioquia",
+    "path": "/"
+  },
+  {
+    "id": 3,
+    "name": "Recursos",
+    "path": "/"
+  }
+]
