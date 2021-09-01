@@ -43,5 +43,6 @@ export default {
         defaultLocale: 'es',
       },
     ],
+    '@nuxt/image',
   ],
 }

@@ -1,5 +1,5 @@
 <template>
-  <HausIcon icon-name="bars" custom-icon-style="text-2xl text-green-gray" />
+  <div></div>
 </template>
 
 <script lang="ts">

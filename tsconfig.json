@@ -29,7 +29,8 @@
       "@types/node",
       "@nuxtjs/i18n",
       "jest"
-    ]
+    ],
+    "resolveJsonModule": true
   },
   "exclude": [
     "node_modules",
