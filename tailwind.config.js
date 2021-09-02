@@ -5,6 +5,8 @@ module.exports = {
       'green-gray': 'var(--lh-green-gray)',
       'lh-gray': 'var(--lh-bg-gray)',
       'jungle-green': 'var(--lh-jungle-green)',
+      'md-blue': 'var(--lh-md-blue)',
+      'sky-blue': 'var(--lh-sky-blue)',
       overlay: 'var(--lh-overlay)',
       white: 'var(--white)'
     },
@@ -15,6 +17,7 @@ module.exports = {
       xs: '.75rem',
       sm: '1.125rem',
       '2xl': '1.75rem',
+      '4xl': '2.375rem',
     },
     borderRadius: {
       lg: '.625rem',
@@ -24,6 +27,7 @@ module.exports = {
       spacing: {
         '2.5': '.688rem',
         '4.5': '1.125rem',
+        '5': '1.313rem',
         '6.5': '1.625rem',
         '8.5': '2.188rem',
         '13': '3.188rem',

@@ -5,7 +5,7 @@ import { mount } from '@vue/test-utils';
 // @ts-ignore
 import CardImage from '@/components/CardImage';
 
-describe('HausIcon.vue', () => {
+describe('CardImage.vue', () => {
   let wrapper: any;
   const images: String[] = ['fake.jpg', 'test.jpg'];
 
