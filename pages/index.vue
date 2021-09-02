@@ -1,5 +1,5 @@
 <template>
-  <NewListOption />
+  <EstateInfo :estate="{id: 1, name: 'Mis favoritos', covers: [] }" />
 </template>
 
 <script lang="ts">
