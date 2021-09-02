@@ -1,5 +1,5 @@
 <template>
-  <div></div>
+  <CardImage />
 </template>
 
 <script lang="ts">
