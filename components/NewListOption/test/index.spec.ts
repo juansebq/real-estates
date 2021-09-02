@@ -3,15 +3,14 @@ import { mount } from '@vue/test-utils';
 
 // Under test
 // @ts-ignore
-import Navbar from '@/components/Navbar';
+import NewListOption from '@/components/NewListOption';
 
-describe('Navbar.vue', () => {
+describe('NewListOption.vue', () => {
   let wrapper: any;
 
   beforeEach(() => {
-    wrapper = mount(Navbar, {
+    wrapper = mount(NewListOption, {
       stubs: {
-        NuxtLink: true,
         HausIcon: true
       }
     });
@@ -21,7 +20,9 @@ describe('Navbar.vue', () => {
     expect(wrapper.vm).toBeTruthy();
   });
 
-  it('should render menu items correctly', () => {
-    expect(wrapper.findAll('li')).toHaveLength(4);
+  it('should render correctly', () => {
+    expect(wrapper.findAll('div')).toHaveLength(2);
+    expect(wrapper.findAll('p')).toHaveLength(1);
+
   });
 });

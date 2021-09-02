@@ -1,5 +1,5 @@
 <template>
-  <CardImage />
+  <NewListOption />
 </template>
 
 <script lang="ts">

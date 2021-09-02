@@ -9,6 +9,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-add::before {
+  content: "\e900";
+}
 .icon-bars::before {
   content: "\e906";
 }
