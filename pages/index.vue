@@ -1,5 +1,5 @@
 <template>
-  <Hello/>
+  <EstateList />
 </template>
 
 <script lang="ts">

@@ -17,7 +17,9 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
-  css: [],
+  css: [
+    '~/assets/scss/main.scss'
+  ],
   plugins: [],
   components: true,
   buildModules: [
@@ -25,5 +27,22 @@ export default {
     '@nuxtjs/stylelint-module',
     '@nuxtjs/tailwindcss',
   ],
-  modules: ['@nuxtjs/axios'],
+  modules: [
+    '@nuxtjs/axios',
+    [
+      '@nuxtjs/i18n',
+      {
+        locales: [
+          {
+            code: 'es',
+            file: 'es-CO.js',
+          },
+        ],
+        lazy: true,
+        langDir: 'lang/',
+        defaultLocale: 'es',
+      },
+    ],
+    '@nuxt/image',
+  ],
 }

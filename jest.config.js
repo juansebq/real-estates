@@ -1,4 +1,5 @@
 module.exports = {
+  setupFiles: ["<rootDir>/jest.init.js"],
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/$1',
     '^~/(.*)$': '<rootDir>/$1',
@@ -18,6 +19,7 @@ module.exports = {
   collectCoverage: true,
   collectCoverageFrom: [
     '<rootDir>/components/**/*.vue',
+    '<rootDir>/services/**/*.ts',
     '<rootDir>/pages/**/*.vue'
   ],
   testEnvironment: 'jsdom'
