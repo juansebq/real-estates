@@ -1,5 +1,5 @@
 <template>
-  <nav class="flex sm:justify-start md:justify-between md:items-center | h-15 px-4.5 md:px-16 | border-b border-lh-gray">
+  <nav class="sticky top-0 | flex sm:justify-start md:justify-between md:items-center | h-15 px-4.5 md:px-16 | border-b border-lh-gray">
     <img class="hidden md:block" src="~/assets/images/lh-logo-desktop.svg" alt="La Haus Logo" title="La Haus Logo"/>
     <ul class="hidden md:flex">
       <li v-for="item in menuItems" :key="item.id">
@@ -14,7 +14,7 @@
       <div class="mt-3">
         <HausIcon icon-name="bars" custom-icon-style="text-2xl text-green-gray" />
       </div>
-      <img class="h-8 ml-2.5 my-3.5" src="~/assets/images/lh-logo-mobile.svg" alt="La Haus Logo" title="La Haus Logo" />
+      <img class="h-8 ml-2.5 my-3" src="~/assets/images/lh-logo-mobile.svg" alt="La Haus Logo" title="La Haus Logo" />
     </div>
   </nav>
 </template>
@@ -35,6 +35,6 @@ export interface IMenuItem {
 
 @Component
 export default class Navbar extends Vue {
-  public menuItems: Array<IMenuItem> = menuItemsMock;
+  public menuItems: IMenuItem[] = menuItemsMock;
 }
 </script>
