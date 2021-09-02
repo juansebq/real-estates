@@ -1,5 +1,5 @@
 <template>
-  <div class="flex w-73 h-49 m-20 relative">
+  <div class="flex w-73 h-49 relative">
     <div v-if="images.length === 0" class="w-full h-full overflow-hidden rounded-lg">
       <img class="object-cover w-full h-full" src="~/assets/images/lh-empty-estate.svg" alt="Empty Estate" title="Empty Estate" />
     </div>
