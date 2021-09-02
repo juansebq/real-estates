@@ -1,5 +1,5 @@
 <template>
-  <nav class="sticky top-0 | flex sm:justify-start md:justify-between md:items-center | h-15 px-4.5 md:px-16 | border-b border-lh-gray">
+  <nav class="sticky top-0 z-50 | flex sm:justify-start md:justify-between md:items-center | h-15 px-4.5 md:px-16 | bg-white border-b border-lh-gray">
     <img class="hidden md:block" src="~/assets/images/lh-logo-desktop.svg" alt="La Haus Logo" title="La Haus Logo"/>
     <ul class="hidden md:flex">
       <li v-for="item in menuItems" :key="item.id">
@@ -7,12 +7,16 @@
       </li>
       <li>
         <NuxtLink class="mx-2.5 text-jungle-green font-semibold" to="/">{{$t('myProfile')}}</NuxtLink>
-        <HausIcon icon-name="arrow-down" custom-icon-style="text-xs text-green-gray" />
+        <HausIcon icon-name="arrow-down" custom-icon-style="text-xs text-jungle-green" />
       </li>
     </ul>
     <div class="flex md:hidden">
       <div class="mt-3">
-        <HausIcon icon-name="bars" custom-icon-style="text-2xl text-green-gray" />
+        <HausIcon
+          icon-name="bars"
+          custom-icon-style="text-2xl text-green-gray"
+          custom-translate="transform translate-x-1/2 -translate-y-1"
+        />
       </div>
       <img class="h-8 ml-2.5 my-3" src="~/assets/images/lh-logo-mobile.svg" alt="La Haus Logo" title="La Haus Logo" />
     </div>
